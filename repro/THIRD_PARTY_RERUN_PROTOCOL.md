@@ -1,0 +1,8 @@
+# Third-Party Rerun Protocol
+
+1. Clone the repository.
+2. Run `bash repro/run_repro.sh`.
+3. Confirm that `repro/certificate_runtime.json` reports `GGL_G1` through `GGL_G6` and `GGL_GM` as `PASS`.
+4. Confirm that `scripts/release_gate.py --mode fully_extracted` returns `ok = true`.
+5. Confirm that all tracked hashes in `repro/repro_manifest.json` match.
+6. Read `paper/GENERALIZED_GEOMETRIC_LANGLANDS_PREPRINT.md` with the super-repo interpretation in mind.
